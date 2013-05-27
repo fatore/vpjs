@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+console.log(JSON.stringify({
+  "name": require("../package.json").name,
+  "version": require("../package.json").version,
+  "main": "index-browserify.js",
+  "scripts": ["index-browserify.js", "vp.js"]
+}, null, 2));
